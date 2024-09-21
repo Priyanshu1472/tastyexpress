@@ -28,11 +28,84 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar.jsx */
+
+nav {
+  background: #f9f9f9;
+  font-family: Hack, monospace;
+
+  .menuItems {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    li {
+      margin: 20px;
+
+      a {
+        text-decoration: none;
+        color: #8f8f8f;
+        font-size: 24px;
+        font-weight: 400;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
   }
-  to {
-    transform: rotate(360deg);
+  nav ul.menuItems li a {
+    text-decoration: none;
+    color: #000; /* Initial color */
+    transition: color 0.3s ease; /* Transition duration and effect */
   }
+  
+  nav ul.menuItems li a:hover {
+    color: #ff6347; /* Color change on hover (e.g., tomato color) */
+  }
+  
+}
+/* home.jsx */
+.banner{
+  height: 100vh;
+  background-color: #695e5e;
+}
+
+
+/* feature*/
+
+.feature_background{
+background-color: #282c34;
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 30px;
+}
+.features{
+  height: 60vh;
+  width: 90%;
+  border-radius: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.feature{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 18rem;
+
+}
+
+.feature svg{
+  height: 20vh;
 }
